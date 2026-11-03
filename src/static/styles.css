@@ -87,23 +87,32 @@ section h3 {
 }
 
 .participants-section ul {
-  padding-left: 0;
-  list-style: none;
+  padding-left: 20px;
+  list-style: disc;
   color: #444;
   font-size: 14px;
 }
 
 .participants-section li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 5px 0;
+  position: relative;
+  min-height: 46px;
+  padding: 10px 48px 10px 0;
+}
+
+.participants-section li::marker {
+  color: #0066cc;
 }
 
 .participants-section li span {
+  display: block;
   min-width: 0;
   overflow-wrap: anywhere;
+}
+
+.participants-section .delete-participant {
+  position: absolute;
+  top: 5px;
+  right: 0;
 }
 
 .delete-participant {
